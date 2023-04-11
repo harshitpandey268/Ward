@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;    
+    background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url('Assets/img/wall1.jpg');
+    background-size: cover;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 30%;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+    
+}
+.content h1{
+    color: #fff;
+font-size: 50px;
+margin-top: 30px;
+line-height: 1.4;
+text-transform: capitalize;
+margin-top: 0px;
+font-family: 'Jost', sans-serif;
+font-weight: 60;
+}
+
+.content p {
+
+    font-weight: 10;
+    line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* Package */
+  #package{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .package-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .package-heading span{
+    color: #3b61dd;
+  }
+  .package-heading h3{
+    font-size: 2.4rem;
+    color:#2b2b2b;
+    font-weight:600 ;
+  }
+  .package-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .package-box{
+    width: 30%;
+    background-color:#ffffff;
+  }
+  .package-img{
+    width: 300px;
+    height: 200px;
+  }
+  img{
+    margin: 10%;
+    max-width: 100%;
+    min-width: 500px;
+    min-height: 325px;
+  }
+  img:hover{
+    opacity: 0.5;
+  }
+  .package-text{
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    color: #2b2b2b;
+    z-index: 10;
+  }
+  .package-text span{
+    font-size: 0.9rem;
+  }
+  .price{
+    float: right;
+    font: weight 400;
+  }
+  
